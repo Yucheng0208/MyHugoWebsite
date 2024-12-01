@@ -1,4 +1,23 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'PaperMod'
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Yu-Cheng Site"
+theme = "PaperMod"
+
+[params]
+  [params.homeInfoParams]
+    Title = "Hi, I'm Yu-Cheng Chang 👋"
+    Content = "I am a passionate researcher and developer specializing in AIoT, ADAS, and computer vision."
+
+  [params.profileMode]
+    enabled = true
+    title = "Yu-Cheng Chang"
+    subtitle = "AI Researcher & Developer"
+    imageUrl = "/images/profile.jpg"
+    [[params.profileMode.actions]]
+      label = "About Me"
+      url = "/about/"
+      icon = "user"
+    [[params.profileMode.actions]]
+      label = "My Projects"
+      url = "/projects/"
+      icon = "folder"
